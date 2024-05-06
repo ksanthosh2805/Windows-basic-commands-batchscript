@@ -33,21 +33,21 @@ Create a directory named "MyLab" on the desktop.
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 mkdir %userprofile%\Desktop\MyLab
 
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/e20f8141-6596-43d5-b989-2d2dab0d0dda)
+![output](./1.png)
 
 ## COMMAND AND OUTPUT
 
 List the contents of the "MyLab" directory.
 cd %userprofile%\Desktop\MyLab
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/d27849bc-c467-4873-8c79-f7428a160e8c)
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/1fa80caf-e9f6-43b8-ae3b-32796202e14c)
+![output](./2.png)
+![output](./3.png)
 
 
 ## COMMAND AND OUTPUT
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 dir %userprofile%\Desktop\MyLab
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/40de307a-60ec-44ed-a9d2-94ed73c8d346)
+![output](./4.png)
 
 ## COMMAND AND OUTPUT
 
@@ -55,14 +55,14 @@ Move the "MyLab" directory to the "Documents" folder.
 mkdir %userprofile%\Desktop\Backup
 mkdir %userprofile%\Desktop\Backup
 
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/47278c6b-2a0d-45f3-bdb9-2f0cc267fbc3)
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/364ae2ec-b6ff-4583-b92f-bbc9533b06d0)
+![output](./5.png)
+![output](./6.png)
 
 
 ## COMMAND AND OUTPUT
 
 mv Myfile.txt %userprofile%\Documents
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/99f98df3-adcf-47a5-befb-fdd0122af505)
+![output](./7.png)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
@@ -77,8 +77,7 @@ echo Backup completed successfully!
 
 
 ## OUTPUT
-![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/c9ec83f6-a056-4184-8124-df0c065cc7e9)
-
+![output](./8.png)
 ## RESULT:
 
 The commands/batch files are executed successfully.
