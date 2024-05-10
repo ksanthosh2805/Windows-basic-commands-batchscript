@@ -1,5 +1,5 @@
 # Windows-basic-commands-batchscript
-Ex08-Windows-basic-commands-batchscript
+EX08 Windows-basic-commands-batchscript
 
 # AIM:
 To execute Windows basic commands and batch scripting
@@ -28,62 +28,92 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "MyLab" on the desktop.
 
 
-## COMMAND AND OUTPUT
+## COMMAND AND OUTPUT:
+```
+mkdir %userprofile%\Desktop\MyLab
+```
+![alt text](ex8op1.png)
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
-mkdir %userprofile%\Desktop\MyLab
 
-![output](./1.png)
 
-## COMMAND AND OUTPUT
+## COMMAND AND OUTPUT:
+```
+cd %userprofile%\Desktop\MyLab
+```
+![alt text](ex8op2.png)
+
+```
+type nul > MyFile.txt
+```
+
+![alt text](ex8op3.png)
+
+
 
 List the contents of the "MyLab" directory.
-cd %userprofile%\Desktop\MyLab
-![output](./2.png)
-![output](./3.png)
 
 
-## COMMAND AND OUTPUT
+## COMMAND AND OUTPUT:
+```
+dir %userprofile%\Desktop\MyLab
+```
+![alt text](ex8op4.png)
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
-dir %userprofile%\Desktop\MyLab
-![output](./4.png)
 
-## COMMAND AND OUTPUT
+## COMMAND AND OUTPUT:
+```
+mkdir %userprofile%\Desktop\Backup
+```
+![alt text](ex8op5.png)
+
+```
+copy MyFile.txt %userprofile%\Desktop\Backup
+```
+
+![alt text](ex8op6.png)
 
 Move the "MyLab" directory to the "Documents" folder.
-mkdir %userprofile%\Desktop\Backup
-mkdir %userprofile%\Desktop\Backup
-
-![output](./5.png)
-![output](./6.png)
 
 
-## COMMAND AND OUTPUT
+## COMMAND AND OUTPUT:
+```
+mkdir %userprofile%\Desktop\Documents
 
-mv Myfile.txt %userprofile%\Documents
-![output](./7.png)
+move MyLab Documents
+```
+![alt text](ex8op7.png)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
 
+
+
+## COMMAND:
+```
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 echo Backup completed successfully!
+```
 
 
+## OUTPUT:
+![alt text](ex8op8.png)
 
+## COMMAND:
+```
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+del %userprofile%\Documents\*.docx
+echo Backup and deletion completed successfully!
+```
+## OUTPUT:
+![alt text](ex8op9.png)
 
-## OUTPUT
-![output](./8.png)
-## RESULT:
-
+# RESULT:
 The commands/batch files are executed successfully.
-
-
-
-
-
 
